@@ -3,46 +3,39 @@
 <head>
     <title>Task Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            width: 100%;
         }
 
-        header {
+        header{
             border: 2px solid black;
             background-color: rgb(242, 220, 239);
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 10px 0;
         }
 
         #torii {
-            width: 90%;
-            max-width: 500px;
+            width: 500px;
+            height: 80px;
             border-radius: 15px;
         }
 
         nav {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            padding: 10px 0;
-            gap: 15px;
+            gap: 20px;
             background-color: rgb(240, 238, 238);
+            padding: 10px 0;
         }
 
         nav a {
-            text-decoration: none;
             font-size: 18px;
+            text-decoration: none;
             color: black;
             display: flex;
             align-items: center;
@@ -64,35 +57,40 @@
             background-image: url(tec.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            padding: 20px;
-            text-align: center;
+            height: 380px;
+            width: 100%;
             border: 2px solid rgb(247, 239, 239);
+            text-align: center;
+            position: relative;
         }
 
         .info h2 {
             font-size: 35px;
             font-style: italic;
             color: rgb(239, 227, 2);
+            margin-top: 20px;
         }
 
         .info h4 {
             color: rgb(242, 235, 238);
             font-weight: bold;
+            margin: 5px 0;
         }
 
         .info img {
-            margin: 20px auto;
-            display: block;
+            position: absolute;
+            top: 80px;
+            left: calc(100% - 350px); /* roughly like desktop */
+            width: 300px;
+            height: 200px;
             border-radius: 20px;
-            max-width: 90%;
-            height: auto;
             border: 3px solid rgb(215, 201, 201);
             box-shadow: 2px 3px rgb(219, 209, 209);
         }
 
         #offer {
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         #offer h2 {
@@ -101,24 +99,24 @@
 
         .course-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            flex-wrap: nowrap; /* keep inline like desktop */
+            gap: 10px;
         }
 
         .course {
             border: 2px solid black;
+            width: 300px;
+            height: 500px;
             padding: 10px;
-            width: 90%;
-            max-width: 300px;
             text-align: center;
             background-color: rgb(240, 238, 238);
         }
 
         .course img {
+            width: 100%;
+            height: 200px;
             border-radius: 30px;
-            max-width: 100%;
-            height: auto;
         }
 
         .contact {
@@ -127,6 +125,7 @@
             color: rgb(247, 235, 235);
             padding: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -197,4 +196,3 @@
     </div>
 </body>
 </html>
-
