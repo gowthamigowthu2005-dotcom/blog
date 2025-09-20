@@ -96,24 +96,43 @@
             color: blue;
             text-align: center;
         }
+/* Courses container */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
-        .course {
-            display: inline-block;
-            width: 450px;
-            height: 500px;
-            border: 2px solid black;
-            margin: 5px;
-            padding: 10px;
-            justify-contenet:space-evenly;
-         
-            background-color: rgb(240, 238, 238);
-           
-        }
+/* Individual course card */
+.course {
+    width: 45%; /* Two courses per row */
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(240, 238, 238);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
 
-        .course img {
-            border-radius: 30px;
-        }
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
 
+.course h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.course p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+       
         /* Contact section */
         .contact {
             text-align: center;
@@ -191,6 +210,7 @@
     </div>
 </body>
 </html>
+
 
 
 
