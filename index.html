@@ -10,21 +10,6 @@
             font-family: Arial, sans-serif;
             width: 1200px; /* fixed width like desktop */
         }
-body {
-    width: 1200px; /* fixed width */
-    margin: 0 auto; /* center horizontally */
-    font-family: Arial, sans-serif;
-}
-
-header, .info, #offer, .contact {
-    width: 100%; /* full width inside fixed body */
-}
-
-.info img {
-    position: absolute; /* keep exact position like desktop */
-    top: 80px;
-    left: 850px;
-}
 
         header{
             border:2px solid black;
@@ -68,40 +53,37 @@ header, .info, #offer, .contact {
             color: rgb(4, 4, 213);
         }
 
-          .info{
-            background-image: url(tec.jpg) ;
-          margin-top:10px ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:380px;
-    width:100%;
-    display: blcok;
-    
-    
-    border: 2px solid rgb(247, 239, 239);
-           }
-           .info h2{
-            font-size: 45px;
+        .info {
+            background-image: url(tec.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 380px;
+            width: 1200px; /* keep same as desktop */
+            border: 2px solid rgb(247, 239, 239);
+            text-align: center;
+            position: relative;
+        }
+
+        .info h2 {
+            font-size: 35px;
             font-style: italic;
             color: rgb(239, 227, 2);
-            text-shadow: 3px 01px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             align-self: center;   
-            flex-wrap: nowrap;         
-           }
-           .info h4{
+            flex-wrap: nowrap;      
+        }
+
+        .info h4 {
             color: rgb(242, 235, 238);
             
-            font-style: bold;
-           }
-           .info img{
+        }
 
-      
         .info img {
             position: absolute;
             top: 80px;
-            left: 850px; 
+            left: 850px; /* fixed position like desktop */
             width: 300px;
             height: 200px;
             border-radius: 20px;
@@ -216,9 +198,3 @@ header, .info, #offer, .contact {
     </div>
 </body>
 </html>
-
-
-
-
-
-
