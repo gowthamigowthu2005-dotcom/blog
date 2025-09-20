@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Task Page</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
 * {
     margin: 0;
@@ -18,6 +17,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     border: 2px solid black;
     background-color: rgb(242, 220, 239);
@@ -25,7 +25,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
 }
 
 #torii {
@@ -35,6 +34,7 @@ header {
     border-radius: 15px;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -51,6 +51,7 @@ nav a {
     flex-wrap: wrap;
 }
 
+/* Welcome Section */
 #Welcome {
     margin: 15px;
     padding: 15px;
@@ -64,6 +65,7 @@ nav a {
     margin-bottom: 10px;
 }
 
+/* Info Section */
 .info {
     background-image: url(tec.jpg);
     margin-top: 10px;
@@ -101,19 +103,26 @@ nav a {
     margin-top: 20px;
 }
 
+/* Courses Section */
 #offer h2 {
     color: blue;
     text-align: center;
     margin: 20px 0;
 }
 
-
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
 
 .course {
     border: 2px solid black;
     padding: 10px;
-    width: 22%;
-    max-width: 250px;
+    flex: 1 1 250px; /* Flexible width, min 250px, grows to fill space */
+    max-width: 300px;
     background-color: rgb(240, 238, 238);
     text-align: center;
     border-radius: 10px;
@@ -129,6 +138,7 @@ nav a {
     margin-bottom: 10px;
 }
 
+/* Contact Section */
 .contact {
     text-align: center;
     background-color: #0a0a0a;
@@ -209,4 +219,3 @@ nav a {
 </div>
 </body>
 </html>
-
